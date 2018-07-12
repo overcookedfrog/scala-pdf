@@ -1,10 +1,10 @@
-releaseSettings
-
-ReleaseKeys.crossBuild := true
+//releaseSettings
+//ReleaseKeys.crossBuild := true
 
 name := "scala-pdf"
 
-organization := "net.kaliber"
+//organization := "net.kaliber"
+organization := "com.github.overcookedfrog"
 
 scalaVersion := "2.12.4"
 
@@ -22,3 +22,5 @@ resolvers ++= Seq(
   "Typesafe repository" at "http://repo.typesafe.com/typesafe/releases/"
 )
 
+bintrayReleaseOnPublish in ThisBuild := false
+licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
